@@ -1,16 +1,21 @@
 #include <stdio.h>
-int main (void)
+
+int main(void)
 {
-int n ;
-if (n < %d )
-	{printf("is positive");}
-else if (n =0)
-	{
-	printf("is zero"):}
-	
-else (n <0)
-{
-printf ("is negative");
-}
-return 0 ;
+    int n = 0; // Change cette valeur pour tester
+
+    if (n > 0)
+    {
+        printf("%d is positive\n", n);
+    }
+    else if (n == 0)
+    {
+        printf("%d is zero\n", n);
+    }
+    else
+    {
+        printf("%d is negative\n", n);
+    }
+
+    return 0;
 }
