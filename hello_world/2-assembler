@@ -1,2 +1,2 @@
-#!/bin/bas
-hfff
+#!/bin/bash
+gcc -s $CFILE
