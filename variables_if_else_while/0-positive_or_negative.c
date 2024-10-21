@@ -2,7 +2,7 @@
 
 int main(void)
 {
-    int n = 0; // Change cette valeur pour tester
+    int n = 0;
 
     if (n > 0)
     {
