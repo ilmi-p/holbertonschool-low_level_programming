@@ -1,7 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
+/**
+ * main - Entry point
+ *
+ * Description: Generates a random number and prints whether
+ * the number is positive, negative, or zero.
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
     int n;
@@ -23,4 +34,4 @@ int main(void)
     }
 
     return 0;
-}    
+}   
