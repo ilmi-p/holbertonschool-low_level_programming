@@ -1,4 +1,12 @@
 #include <stdio.h>
+/**
+* main - Entry point
+*
+* This program prints the alphabet in reverse order
+* from 'z' to 'a', followed by a new line.
+*
+* Return: Always 0 (Success)
+*/
 int main(void)
 {
 int Alphabet;
