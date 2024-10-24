@@ -1,8 +1,6 @@
 #include <stdio.h>
 int main(void)
 {
-int affiche;
-printf("_putchar");
-printf("\n");
+printf("_putchar\n");
 return (0);
 }
