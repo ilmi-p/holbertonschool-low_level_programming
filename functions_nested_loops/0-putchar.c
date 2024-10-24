@@ -2,6 +2,6 @@
 int main(void)
 {
 int affiche;
-printf("_putchar\n")
+printf("_putchar\n");
 return (0);
 }
