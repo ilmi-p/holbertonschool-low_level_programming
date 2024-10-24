@@ -2,6 +2,7 @@
 int main(void)
 {
 int affiche;
-printf("_putchar\n");
+printf("_putchar");
+printf("\n");
 return (0);
 }
