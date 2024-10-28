@@ -1,11 +1,14 @@
 #include "main.h"
 /**
- * print_numbers - prints numbers from 0 to 9, followed by a newline.
+ * print_numbers - Affiche les chiffres de 0 |  9.
+ * Return: Aucun retour (void).
  */
 void print_numbers(void)
 {
-int neuf;
-for (neuf = 0; neuf <= 9; neuf++)
-_putchar(neuf + '0');
+int A;
+for (A = 0; A <= 9; A++)
+{
+_putchar(A + '0');
+}
 _putchar('\n');
 }
