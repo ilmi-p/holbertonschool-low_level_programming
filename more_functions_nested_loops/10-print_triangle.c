@@ -8,7 +8,7 @@ _putchar('\n');
 }
 else
 {
-²(size <= 0)
+(size <= 0)
 _putchar('\n');
 }
 }
