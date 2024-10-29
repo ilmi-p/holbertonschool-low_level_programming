@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - Prints numbers from 1 to 100 with FizzBuzz substitutions
+ * main - Prints numbers from 1 to 100 with FizzBuzz substitution
  *
  * Return: Always 0 (Success)
  */
