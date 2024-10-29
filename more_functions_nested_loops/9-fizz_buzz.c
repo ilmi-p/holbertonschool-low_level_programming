@@ -15,10 +15,12 @@ else if (i % 3 == 0)
 printf("Fizz");
 else if (i % 5 == 0)
 printf("Buzz");
-lse
+else
 printf("%d", i);
-if (i < 100)  // Add space only if it's not the last number
+if (i < 100)
+{
 printf(" ");
+}
 }
 printf("\n");
 return (0);
