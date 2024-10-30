@@ -6,6 +6,5 @@
  */
 void reset_to_98(int *n)
 {
-*n = 98;
-printf("adresse pointeur : %p\n", (void *)n);
+  *n = 98;
 }
