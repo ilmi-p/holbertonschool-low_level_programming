@@ -1,0 +1,8 @@
+#include "main.h"
+#include <stdio.h>
+int _strlen(char *s)
+{
+int panda;
+for (panda = 0, s[panda] != \n ;panda ++)
+return (panda);
+}
