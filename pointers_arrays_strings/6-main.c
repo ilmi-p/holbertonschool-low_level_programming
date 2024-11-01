@@ -7,7 +7,7 @@
 int main(void)
 {
 char *str;
-str = "holberton";
+str = "holberton!";
 puts2(str);
 return (0);
 }
