@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _atoi - Convert a string to an integer.
+ * _atoi - Converts a string to an integer.
  * @s: The string to be converted.
  *
  * Return: The integer value of the string.
@@ -20,11 +20,13 @@ continue;
 if (s[i] >= '0' && s[i] <= '9')
 {
 found_num = 1;
+if (result > (2147483647 - (s[i] - '0')) / 10)
+return (sign == 1 ? 2147483647 : -2147483648);
 result = result * 10 + (s[i] - '0');
 }
 else if (found_num)
 break;
 i++;
 }
-return (result * sign);
+return (found_num ? result * sign : 0);
 }
