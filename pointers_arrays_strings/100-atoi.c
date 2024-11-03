@@ -16,7 +16,7 @@ while (s[i] != '\0')
 if (s[i] == '-')
 sign *= -1;
 else if (s[i] == '+')
-continue;
+i++;
 if (s[i] >= '0' && s[i] <= '9')
 {
 found_num = 1;
