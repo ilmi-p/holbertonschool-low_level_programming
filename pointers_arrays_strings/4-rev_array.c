@@ -1,19 +1,17 @@
 #include "main.h"
 /**
- * print_rev - Affiche une chaîne de caractères en rever
- *              suivie d'une nouvelle ligne.
- * @s: Pointeur vers la chaîne de caractères à afficher en re
- * Cette fonction parcourt la chaîne `s` pour déterminer sa longueu
- * puis imprime les caractères de la chaîne en ordre invers
+ * reverse_array - Reverses the content of an array of integers
+ * @a: The array of integers
+ * @n: The number of elements in the array
+ * Return: void
  */
-void print_rev(char *s)
+void reverse_array(int *a, int n)
 {
-int l, i;
-for (l = 0; s[l] != '\0'; l++)
-;
-for (i = l - 1; i >= 0; i--)
+int temp, i;
+for (i = 0; i < n / 2; i++)
 {
-_putchar(s[i]);
+temp = a[i];
+a[i] = a[n - i - 1];
+a[n - i - 1] = temp;
 }
-_putchar('\n');
 }
