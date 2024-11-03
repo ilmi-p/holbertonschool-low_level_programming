@@ -19,5 +19,5 @@ while (*src != '\0')
 *ptr++ = *src++;
 }
 *ptr = '\0';
-return dest;
+return (dest);
 }
