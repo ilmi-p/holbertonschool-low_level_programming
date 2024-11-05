@@ -1,15 +1,13 @@
 #include "main.h"
 /**
- * factorial - Renvoie le factoriel d'un nombre.
- * @n: Le nombre pour lequel calculer le factoriel.
+ * _strlen_recursion - Renvoie la longueur d'une chaîne de caractère
+ * @s: La chaîne dont on veut connaître la longueur
  *
- * Return: Le factoriel de n, ou -1 si n est inférieur à 0 (erreur)
+ * Return: La longueur de la chaîne
  */
-int factorial(int n)
+int _strlen_recursion(char *s)
 {
-if (n < 0)
-return (-1);
-if (n == 0)
-return (1);
-return (n * factorial(n - 1));
+if (*s == '\0')
+return (0);
+return (1 + _strlen_recursion(s + 1));
 }
