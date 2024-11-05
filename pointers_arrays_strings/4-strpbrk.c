@@ -1,28 +1,20 @@
-#include <unistd.h>
-#include <string.h>
+#include "main.h"
+#include <stddef.h>
 /**
- * _strpbrk - Locate the first occurrence in the string s of any of the bytes
- *            in the string accept.
- * @s: The string to be searched.
+ * _strpbrk - Searches a string for any of a set of bytes.
+ * @s: The main string to be scanned.
  * @accept: The string containing the characters to match.
- *
- * Return: A pointer to the byte in s that matches one of the bytes in accept,
- *         or NULL if no such byte is found.
+ * Return: A pointer to the first occurrence in `s` of any of the
+ * bytes in `accept`, or NULL if no such byte is found.
  */
-char *_strpbrk(const char *s, const char *accept);
-int main() {
-char *s = "hello, world";
-char *f = "world";
-char *t;
-t = _strpbrk(s, f);
-if (t)
+char *_strpbrk(char *s, char *accept)
 {
-write(STDOUT_FILENO, t, strlen(t));
-}
-else
+int i, j;
+for (i = 0; s[i] != '\0'; i++)
 {
-char *message = "Aucun caract√®re trouv√n©.";
-write(STDOUT_FILENO, message, strlen(message));
+for (j = 0; accept[j] != '\0'; j++)
+if (s[i] == accept[j])
+return (&s[i]);
 }
-return(0);
+return (NULL);
 }
