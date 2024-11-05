@@ -1,18 +1,20 @@
 #include "main.h"
 /**
- * _puts_recursion - Prints a string followed by a new line
- * @s: The string to be printed
+ * _puts_recursion - Imprime une chaîne suivie d'une nouvelle ligne
+ * @s: La chaîne à imprim.
  *
- * Description: This function prints each character of the string
- * using a while loop, and then adds a newline at the end.
+ * Description: Cette fonction imprime une chaîne en utilisant la récursivit
+ * caractère par caractère, puis imprime une nouvelle ligne à la f
  */
 void _puts_recursion(char *s)
 {
-int i = 0;
-while (s[i] != '\0')
+if (*s)
 {
-_putchar(s[i]);
-i++;
+_putchar(*s);
+_puts_recursion(s + 1);
 }
+else
+{
 _putchar('\n');
+}
 }
