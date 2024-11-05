@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * _print_rev_recursion - Affiche une chaîne de caractères en sens invers
- * @s: La chaîne de caractères à afficher en invers
- *
- * Description: Cette fonction affiche une chaîne de caractères en utilisant la récursivi
- */
+* _print_rev_recursion - Affiche une chaîne de caractères en sens inver
+* @s: La chaîne  affich
+*
+* Description: Affiche la chaîne en sens inverse en utilisant la récursi
+*/
 void _print_rev_recursion(char *s)
 {
 if (*s)
