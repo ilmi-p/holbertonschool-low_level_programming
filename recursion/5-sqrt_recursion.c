@@ -9,8 +9,8 @@ int _sqrt_recursion(int n)
 {
 if (n < 0)
 {
-return (-1);
-return (_sqrt_helper(n, 0));
+return -1;
+return _sqrt_helper(n, 0);
 }
 /**
 * _sqrt_helper - Aide pour calculer la racine carrée en testant chaque valeur.
