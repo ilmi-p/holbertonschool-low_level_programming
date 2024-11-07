@@ -9,6 +9,6 @@
 int main(int argc, char *argv[])
 {
 (void)argv;
-printf("le num de ar est de : %d\n", argc);
+printf("le num de ar est de : %d\n", argc -1);
 return (0);
 }
