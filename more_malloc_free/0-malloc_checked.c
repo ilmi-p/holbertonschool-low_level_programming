@@ -3,8 +3,8 @@
 /**
 * malloc_checked - Alloue de la mémoire en utilisant mallo
 * @b: Taille de la mémoire à allou
-* 
-* Return: Pointeur vers la mémoire allouée. Si l'allocation échoue
+*
+* Return: Pointeur vers la mémoire allouée. Si l'allocation échou
 *         termine le processus avec un statut de 98.
 */
 void *malloc_checked(unsigned int b)
