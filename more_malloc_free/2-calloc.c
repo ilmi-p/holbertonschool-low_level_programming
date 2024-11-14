@@ -1,11 +1,12 @@
 #include "main.h"
 #include <stdlib.h>
-/*
-* _calloc - Alloue de la mémoire pour un tableau et initialise à z�
-* @nmemb: Nombre d'élémen
-* @size: Taille de chaque élé
-* Return: Pointeur sur la mémoire allouée ou NULL en cas d'éch
-*/
+/**
+ * _calloc - Alloue de la mémoire pour un tableau et initialise à zér
+ * @nmemb: Nombre d'éléments à allo
+ * @size: Taille de chaque élémen
+ *
+ * Return: Pointeur sur la mémoire allouée, ou NULL en cas d'éch
+ */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 void *ptr;
