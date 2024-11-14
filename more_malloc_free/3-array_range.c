@@ -1,10 +1,14 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * array_range - crée un tableau d'entiers de min à max inclus
+ * array_range - crée un tableau d'entiers de min à max inclus.
  * @min: valeur minimale.
  * @max: valeur maximale.
- * Retourne un pointeur vers le tableau créé ou NULL en cas d'erreu
+ * Retourne un pointeur vers le tableau créé ou NULL en cas d'erreur.
+ * Si min > max, retourne NULL.
+ * Si malloc échoue, retourne NULL.
+ *
+ * Return: un pointeur vers le tableau créé ou NULL en cas d'erreur.
  */
 int *array_range(int min, int max)
 {
