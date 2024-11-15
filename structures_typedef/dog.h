@@ -1,16 +1,9 @@
-#include <stdio.h>
-#include "dog.h"
-/**
- * main - affiche le nom et l'âge du chien
- *
- * Return: 0 si tout fonctionne correctement.
- */
-int main(void)
+#ifndef DOG_H
+#define DOG_H
+typedef struct dog
 {
-dog my_dog;
-	my_dog.name = "Poppy";
-	my_dog.age = 3.5;
-	my_dog.owner = "Bob";
-	printf("My name is %s, and I am %.1f :) - Woof!\n", my_dog.name, my_dog.age);
-return (0);
-}
+    char *name;
+    float age;
+    char *owner;
+} dog;
+#endif
