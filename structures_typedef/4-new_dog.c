@@ -1,14 +1,31 @@
 #include <stdlib.h>
-#include <string.h>
 #include "dog.h"
 /**
- * new_dog - creates a new dog
- * @name: name of the dog
- * @age: age of the dog
- * @owner: owner of the dog
+ * new_dog - Creates a new dog.
+ * @name: The name of the dog.
+ * @age: The age of the dog.
+ * @owner: The owner of the dog.
  *
- * Return: pointer to the new dog, or NULL if it fails
+ * Return: A pointer to the new dog, or NULL if it fails.
  */
+int my_strlen(char *str)
+{
+int length = 0;
+while (str[length] != '\0')
+length++;
+return length;
+}
+char *my_strcpy(char *dest, char *src)
+{
+int i = 0;
+while (src[i] != '\0')
+{
+dest[i] = src[i];
+i++;
+}
+dest[i] = '\0';
+return dest;
+}
 dog_t *new_dog(char *name, float age, char *owner)
 {
 dog_t *new_dog;
@@ -18,21 +35,21 @@ return (NULL);
 new_dog = malloc(sizeof(dog_t));
 if (new_dog == NULL)
 return (NULL);
-name_copy = malloc(strlen(name) + 1);
+name_copy = malloc(my_strlen(name) + 1);
 if (name_copy == NULL)
 {
 free(new_dog);
 return (NULL);
 }
-strcpy(name_copy, name);
-owner_copy = malloc(strlen(owner) + 1);
+my_strcpy(name_copy, name);
+owner_copy = malloc(my_strlen(owner) + 1);
 if (owner_copy == NULL)
 {
 free(name_copy);
 free(new_dog);
 return (NULL);
 }
-strcpy(owner_copy, owner);
+my_strcpy(owner_copy, owner);
 new_dog->name = name_copy;
 new_dog->age = age;
 new_dog->owner = owner_copy;
