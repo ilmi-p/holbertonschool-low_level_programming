@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "chien.h"
+#include "dog.h"
 /**
  * main - affiche le nom et l'âge du chien
  *
@@ -7,11 +7,10 @@
  */
 int main(void)
 {
-	chien mon_chien;
-	mon_chien.age = 5.5;
-	mon_chien.name = "paul";
-	mon_chien.owner = "panda";
-	printf("My name is %s, and I am %.1f :) - Woof!\n", mon_chien.name,
-	mon_chien.age);
+dog my_dog;
+	my_dog.name = "Poppy";
+	my_dog.age = 3.5;
+	my_dog.owner = "Bob";
+	printf("My name is %s, and I am %.1f :) - Woof!\n", my_dog.name, my_dog.age);
 return (0);
 }
