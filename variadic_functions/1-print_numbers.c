@@ -4,7 +4,7 @@
  * print_numbers - prints numbers followed by a new line
  * @separator: string to be printed between numbers
  * @n: number of integers to print
- * 
+ *
  * Description: This function prints numbers followed by a new line.
  * The numbers are separated by the specified separator, if provided.
  * If separator is NULL, it is not printed. The function uses variadic
