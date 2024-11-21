@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdarg.h>
-**
+/**
  * print_numbers - prints numbers followed by a new line
  * @separator: string to be printed between numbers
  * @n: number of integers to print
@@ -9,7 +9,7 @@
  * The numbers are separated by the specified separator, if provided.
  * If separator is NULL, it is not printed. The function uses variadic
  * arguments to accept any number of integers to be printed.
- *
+ */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 va_list args;
