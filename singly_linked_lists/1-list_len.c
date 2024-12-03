@@ -1,26 +1,19 @@
 #include <stdio.h>
 #include "lists.h"
 /**
- * list_len - Returns the number of elements in a linked list_t list.
- * @h: Pointer to the head of the list.
+ * list_len - compte le nombre d'éléments dans une liste de type list_t
+ * @h: pointeur vers le premier nœud de la liste
  *
- * Return: The number of elements in the list.
+ * Return: le nombre de nœuds dans la liste
  */
 size_t list_len(const list_t *h)
 {
-size_t count = 0;
-if (h == NULL)
+	size_t count = 0;
+
+	while (h != NULL)
 {
-printf("[0] (nil)\n");
-}
-else
-{
-while (h != NULL)
-{
-printf("La longueur est de %u et il contient %s\n", h->len, h->str);
-h = h->next;
-count++;
-}
+		count++;
+		h = h->next;
 }
 return (count);
 }
