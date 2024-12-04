@@ -2,9 +2,12 @@
 #include <stdlib.h>
 #include <string.h>
 #include "lists.h"
-/* Cette fonction ajoute un nouveau nœud à la fin de la liste chaîn
- * Si la liste est vide, le nouveau nœud devient le premier éléme
- * Sinon, le nouveau nœud est ajouté à la fin de la lis
+/**
+ * add_node_end - Ajoute un nouveau nœud �la fin de la liste chaînée.
+ * @head: Un pointeur vers le premier nœud de la liste.
+ * @str: La chaîne de caractères à ajouter dans le nouveau nœud
+ *
+ * Return: Un pointeur vers le nouveau nœud, ou NULL si une erreur se produit
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
