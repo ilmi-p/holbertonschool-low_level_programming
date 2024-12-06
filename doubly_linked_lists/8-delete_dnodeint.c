@@ -1,32 +1,49 @@
-#include <stdio.h>
 #include "lists.h"
 #include <stdlib.h>
 /**
- * delete_dnodeint_at_index - Deletes a node at a given index.
- * @head: Double pointer to the head of the doubly linked list.
- * @index: Index of the node to be deleted.
+ * delete_dnodeint_at_index - Supprime un nœud à un index spécifiqu
+ *                            dans une liste doublement chaîné
+ * @head: Pointeur vers la tête de la liste
+ * @index: Index du nœud à supprimer (commence à 0)
  *
- * Return: 1 if it succeeded, -1 if it failed.
+ * Return: 1 si la suppression réussit, -1 sinon
  */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
-unsigned int count = 0;
-dlistint_t *current = *head;
-if (*head == NULL)
+dlistint_t *temp;
+unsigned int i = 0;
+
+if (head == NULL || *head == NULL)
 return (-1);
-while (current != NULL)
+
+temp = *head;
+
+if (index == 0)
 {
-if (count == index)
-{
-if (current->prev != NULL)
-current->prev->next = current->next;
-if (current->next != NULL)
-current->next->prev = current->prev;
-free(current);
+*head = temp->next;
+
+if (*head != NULL)
+(*head)->prev = NULL;
+
+free(temp);
 return (1);
 }
-current = current->next;
-count++;
+
+while (temp != NULL && i < index)
+{
+temp = temp->next;
+i++;
 }
+
+if (temp == NULL)
 return (-1);
+
+if (temp->prev != NULL)
+temp->prev->next = temp->next;
+
+if (temp->next != NULL)
+temp->next->prev = temp->prev;
+
+free(temp);
+return (1);
 }
